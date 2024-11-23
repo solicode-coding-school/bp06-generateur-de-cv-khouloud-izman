@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  
+  
+</head>
+<body>
+    <div class="container">
+   
+
+        <main class="form-container">
+            <form>
+              <h1>INFORMATIONS PERSONNELLES</h1>
+
+            
+            
+          
+              <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="nom">Nom de famille</label>
+                <input type="text" id="nom" name="nom" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="telephone">Numéro de téléphone</label>
+                <input type="tel" id="telephone" name="telephone">
+              </div>
+          
+              <div class="form-group">
+                <label for="adresse">Adresse</label>
+                <input type="text" id="adresse" name="adresse">
+              </div>
+        
+          
+              <div class="form-group">
+                <label for="ville">Ville / Localité</label>
+                <input type="text" id="ville" name="ville">
+              </div>
+          
+              <!-- Date et lieu de naissance -->
+              <div class="form-group">
+                <label>Date de naissance</label>
+                <div class="birth-date">
+                  <select name="jour" id="jour">
+                    <option>Jour</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+
+
+
+                  </select>
+                  <select name="mois" id="mois">
+                    <option>Mois</option>
+                    <option>Janvier</option>
+                    <option>Février</option>
+                    <option>Mars</option>
+                    <option>Avril</option>
+                    <option>Mai</option>
+                    <option>Juin</option>
+                    <option>Juillet</option>
+                    <option>Août</option>
+                    <option>Septembre</option>
+                    <option>Octobre</option>
+                    <option>Novembre</option>
+                    <option>Décembre</option>
+
+
+                  </select>
+                  <select name="annee" id="annee">
+                    <option>Année</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>2000</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                    <option>1992</option>
+                    <option>1991</option>
+                    <option>1990</option>
+                    
+
+                  </select>
+                </div>
+              </div>
+          
+              <div class="form-group">
+                <label for="lieu-naissance">Lieu de naissance</label>
+                <input type="text" id="lieu-naissance" name="lieu-naissance">
+              </div>
+          
+              <div class="form-group">
+                <label for="sexe">Sexe</label>
+                <select id="sexe" name="sexe">
+                  <option>Faites un choix</option>
+                  <option>Homme</option>
+                  <option>Femme</option>
+                  <option>Autre</option>
+                </select>
+              </div>
+          
+              <div class="form-group">
+                <label for="permis">Permis de conduire</label>
+                <input type="text" id="permis" name="permis">
+              </div>
+          
+              <div class="form-group">
+                <label for="nationalite">Nationalité</label>
+                <input type="text" id="nationalite" name="nationalite">
+              </div>
+          
+
+        <div class="section">
+            <button id="Profil" class="btn">Profil</button>
+            <div id="Profil-container"></div>
+     
+        
+       
+          <button id="add-experience" class="btn">Expériences Professionnelles</button>
+          <div id="experiences-container"></div>
+
+
+          <button id="school" class="btn">Formation Scolaire</button>
+          <div id="school-container"></div>
+
+          <button id="com" class="btn">Compétences</button>
+          <div id="com-container"></div>
+
+          <button id="lan" class="btn">Langues</button>
+          <div id="lan-container"></div>
+
+          
+          <button id="loi" class="btn">Loisirs</button>
+          <div id="loi-container"></div>
+         
+        </form>
+      </main>
+
+        </div>
+     
+      
+        <div>
+          <button id="generate-cv">Générer le CV</button>
+          <button id="download-cv">Télécharger le CV en PDF</button>
+        </div>
+      
+      <div id="cv-display"></div>
+
+
+
+       
+
+          
+      
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+          

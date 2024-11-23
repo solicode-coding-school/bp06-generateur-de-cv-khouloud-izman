@@ -1,0 +1,331 @@
+*{
+  margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+
+
+}
+
+
+
+.form-container,
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+font-weight: bold;  
+margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select {
+  width:100%;
+  padding: 10px;
+  border: 1px solid #2980b9;
+  border-radius: 5px;
+}
+
+
+.btn {
+  display: inline-block;
+  background-color: #2980b9; 
+   color: #fff;
+   font-weight: bold;
+  font-size: 18px;
+  padding: 10px 15px;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+background-color: #c82333;
+}
+
+.remove-btn {
+  display: inline-block;
+  background-color: #dc3545;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  width: 40px;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
+
+
+.experience-form,
+.school-form,
+.com-form,
+.loi-form,
+.lan-form {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.experience-form label,
+.school-form label,
+.com-form label,
+.loi-form label,
+.lan-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+
+}
+
+.experience-form input,
+.experience-form select,
+.experience-form textarea,
+.school-form input,
+.school-form select,
+.school-form textarea,
+.com-form input,
+.com-form select,
+.com-form textarea,
+.loi-form input,
+.loi-form select,
+.loi-form textarea,
+.lan-form input,
+.lan-form select,
+.lan-form textarea ,
+.Profil-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #2980b9;
+  border-radius: 4px;
+ }
+
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+}
+
+.birth-date {
+  display: flex;
+  gap: 15px;
+}
+
+.birth-date select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #2980b9;
+  border-radius: 5px;
+}
+/* Style général pour le CV */
+#cv-container {
+  width: 70%;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+}
+
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #bad5f0;
+  margin-top: px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h4 {
+  font-size: 20px;
+  color: #2980b9;
+  margin-bottom: 5px;
+}
+
+#generate-cv {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 40px;
+  display: block;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#generate-cv:hover {
+  background-color: #3498db;
+}
+
+#generate-cv:active {
+  background-color: #2980b9;
+}
+
+#download-cv {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 40px;
+  display: block;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#download-cv:hover {
+  background-color: #3498db;
+}
+
+#download-cv:active {
+  background-color: #2980b9;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #2980b9;
+}
+
+
+
+.form-container {
+background-color: white;
+ border: #2980b9 solid 3px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+
+.cv-container {
+  max-width: 850px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.cv-container h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cv-container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a73e8;
+  margin-top: 30px;
+  border-bottom: 2px solid #1a73e8;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.cv-container p {
+  font-size: 19px;
+  line-height: 1.7;
+  margin: 10px 0;
+  color: #555;
+}
+
+.icon {
+  margin-right: 12px;
+  color: #1a73e8;
+  font-size: 22px;
+}
+
+.cv-container ul {
+  list-style: none;
+  padding-left: 20px;
+  font-size: 19px;
+
+}
+
+.cv-container ul li {
+  margin: 15px 0;
+  font-size: 19px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.cv-container ul li strong {
+  color: #1a73e8;
+  font-weight: bold;
+  font-size: 19px;
+
+  
+}
+
+
+
+
+
+
+
+
